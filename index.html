@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delicious Eats Restaurant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7fa; /* Light Blue background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: url('https://images.unsplash.com/photo-1561948951-5cfb53751076') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            font-size: 2.5em;
+            background-color: #007bb5; /* Dark Blue background for header */
+        }
+
+        header h1 {
+            font-size: 4em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            background-color: #005f74; /* Darker Blue for navigation */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #ff6347;
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #007bb5; /* Blue heading color */
+        }
+
+        .menu-category {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .menu-item {
+            width: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+            height: auto;
+        }
+
+        .menu-item h3 {
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+
+        .menu-item p {
+            color: #777;
+        }
+
+        .reservation-form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        .reservation-form input, .reservation-form select, .reservation-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .reservation-form button {
+            background-color: #007bb5; /* Blue button */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+
+        .reservation-form button:hover {
+            background-color: #005f74; /* Darker Blue on hover */
+        }
+
+        .reviews {
+            background-color: #f1f1f1;
+            padding: 50px 0;
+        }
+
+        .review-item {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .review-item p {
+            font-style: italic;
+            color: #555;
+        }
+
+        .review-item h3 {
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: #007bb5; /* Blue for reviewer's name */
+        }
+
+        footer {
+            background-color: #005f74; /* Dark Blue for footer */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 1.2em;
+        }
+
+        .social-icons a {
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #ff6347; /* Change icon color on hover */
+        }
+
+        @media (max-width: 768px) {
+            .menu-item {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Delicious Eats Restaurant</h1>
+        <p>Where Great Food Meets Wonderful Moments</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Reservation</a>
+        <a href="#reviews">Customer Reviews</a>
+    </nav>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="container">
+            <div class="menu-category">
+                <div class="menu-item">
+                    <img src="https://www.shutterstock.com/image-photo/appetizer-bar-260nw-618760217.jpg" alt="Appetizer">
+                    <h3>Appetizers</h3>
+                    <p>Start your meal with a delicious appetizer.</p>
+                    <a href="menu.pdf" target="_blank">View Full Menu</a> <!-- Link to full menu (PDF) -->
+                </div>
+                <div class="menu-item">
+                    <img src="https://img.freepik.com/premium-photo/indian-lunch-dinner-main-course-food-group-includes-chana-masala-dal-roti-rice-etc_680471-138.jpg" alt="Main Course">
+                    <h3>Main Courses</h3>
+                    <p>Hearty and satisfying main dishes.</p>
+                    <a href="menu.pdf" target="_blank">View Full Menu</a>
+                </div>
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj5scbp6V1EVqvqgtBeccEwwxLbDFnS9ujKQ&s" alt="Desserts">
+                    <h3>Desserts</h3>
+                    <p>Sweet treats to end your meal on a high note.</p>
+                    <a href="menu.pdf" target="_blank">View Full Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation">
+        <h2>Make a Reservation</h2>
+        <div class="container">
+            <form class="reservation-form" action="https://www.example.com/submit-reservation" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="date" placeholder="Reservation Date" required>
+                <select required>
+                    <option value="">Select Time</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="18:00">6:00 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                </select>
+                <textarea placeholder="Special Requests or Comments" rows="4"></textarea>
+                <button type="submit">Reserve a Table</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="reviews" class="reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="container">
+            <div class="review-item">
+                <p>"The food was absolutely amazing! The staff were so friendly, and the atmosphere was perfect."</p>
+                <h3>John Doe</h3>
+            </div>
+            <div class="review-item">
+                <p>"A delightful experience. The main course was superb, and the desserts were heavenly!"</p>
+                <h3>Jane Smith</h3>
+            </div>
+            <div class="review-item">
+                <p>"Best restaurant in town! My family loved it, and we’ll definitely be back soon!"</p>
+                <h3>Emily Johnson</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Links (Instagram, Facebook, etc.) -->
+
