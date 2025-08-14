@@ -9,6 +9,4 @@ Responsive Design: Optimized for desktops, tablets, and mobile devices.
 Dynamic Menu: A beautifully styled and easy-to-navigate menu.
 Contact Section: Integrated contact information and map for easy access to the location.
 Stylish UI/UX: Clean and modern design to reflect the restaurant's brand.
-Tech Stack:
-
-Frontend: HTML and CSS
+Tech Stack: HTML
